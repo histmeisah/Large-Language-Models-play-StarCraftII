@@ -1,3 +1,3 @@
 # Large-Language-Models-play-StarCraftII
 
-We will update in the next week
+We will be releasing the source code within the coming week
