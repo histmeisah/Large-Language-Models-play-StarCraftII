@@ -17,6 +17,7 @@ when we open this, please log in your blz account and search the map which you w
 Then you should put maps to your StarCrafrt2 file  in StarCraft II\Maps(If the 'Maps' file dont exist, please create it).
 
 Or you can download maps in here:
+![1703001254300](https://github.com/histmeisah/Large-Language-Models-play-StarCraftII/assets/49554454/69f89739-6bfe-417b-96df-afcb7f7756f3)
 
 
 ## Setup environment
