@@ -32,7 +32,7 @@ Or you can download maps in here:
 
 ### Tips
 - `burnysc2`:This is our core package that provide an easy api for use to create this project. Here is: https://github.com/BurnySc2/python-sc2
-- `chromadb`:We used the vector datavase chroma.Due to the package conflict, you must install Chromadb first, then install burnysc2.
+- `chromadb`:We used the vector datavase chroma.Due to the package conflict, **you must install Chromadb first, then install burnysc2.**
 - `Huggingface` and `sentence-transformers`:we used the embedding model  `sentence-transformers/all-mpnet-base-v2`, in our github version, it will automatically download.We also provide the `release` zip, you can just download and unzip that(with embedding model). 
 
 ## Run demo
