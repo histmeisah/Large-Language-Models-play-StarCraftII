@@ -33,7 +33,7 @@ build in ai 难度
 
 
 def gpt_agent_test(agent, env):
-    wandb.login(key='a51e8268ce285c7e63ccc7a6d685e6ea85c48101')
+    wandb.login(key='your_key')
     config = {
         "LLM_model_name": "gpt-3.5-turbo",
         "LLM_temperature": 0,
@@ -136,7 +136,7 @@ if __name__ == '__main__':
     # for i in range(original_args.num_processes):
     #     args_copy = copy.deepcopy(original_args)
     #     args_copy.process_id = str(i)
-    #     args_copy.game_style = GAME_STYLES[i % len(GAME_STYLES)]  # 轮流为每个进程分配一个game_style
+    #     args_copy.game_style = GAME_STYLES[i % len(GAME_STYLES)]  # 轮流为每个进程分配一个game_style,当前版本并未实现game style
     #
     #     p = multiprocessing.Process(target=random_worker, args=(args_copy,))
     #     processes.append(p)
@@ -151,7 +151,7 @@ if __name__ == '__main__':
     for i in range(original_args.num_processes):
         args_copy = copy.deepcopy(original_args)
         args_copy.process_id = str(i)
-        args_copy.game_style = GAME_STYLES[i % len(GAME_STYLES)]  # 轮流为每个进程分配一个game_style
+        args_copy.game_style = GAME_STYLES[i % len(GAME_STYLES)]  # 轮流为每个进程分配一个game_style,当前版本并未实现game style
 
         p = multiprocessing.Process(target=gpt_worker, args=(args_copy,))
         processes.append(p)
