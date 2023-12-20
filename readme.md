@@ -6,6 +6,13 @@ II , however, still exhibit deficiencies in long-term strategic planning and str
 Motivated by this, we aim to validate the capabilities of LLMs on StarCraft II.  We first develop textual StratCraft II environment, called TextStarCraft II. Secondly, we propose a Chain of Summarization
 method, including single-frame summarization for processing raw observations and multi-frame summarization for analyzing game information, providing command recommendations, and generating strategic decisions. Our experiment demonstrates that LLM agents are capable of defeating the built-in AI at the Harder(Lv5) difficulty level. 
 
+
+|  Work        |         AlphaStar     | SCC          | HierNet-SC2         |AlphaStar Unplugged |  Ours |
+|-----------------------|--------------|--------------|---------------------|---------------|--------------|
+|Method                 |SL+RL+self-play  | SL+RL+self-play  | data-mining + RL|offline RL |prompt + Rule base script|     
+| Compute resource      | 12000 CPU cores, 384 TPUs| Linear     | 4 GPUs,48 CPU cores|  ||single gpu,1 cpu(home computer)|
+| required replay       |971,000 | 4,638     |   |20,000,000(20m)| |
+
 Our paper: 
 
 Large Language Models Play StarCraft II: Benchmarks and A Chain of Summarization Approach 
