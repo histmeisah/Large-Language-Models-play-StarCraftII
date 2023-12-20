@@ -8,10 +8,11 @@ method, including single-frame summarization for processing raw observations and
 
 
 |  Work        |         AlphaStar     | SCC          | HierNet-SC2         |AlphaStar Unplugged |  Ours |
-|-----------------------|--------------|--------------|---------------------|---------------|--------------|
+|-----------------------|--------------|-----------------|---------------------|---------------|--------------|
 |Method                 |SL+RL+self-play  | SL+RL+self-play  | data-mining + RL|offline RL |prompt + Rule base script|     
-| Compute resource      | 12000 CPU cores, 384 TPUs| Linear     | 4 GPUs,48 CPU cores|  ||single gpu,1 cpu(home computer)|
-| required replay       |971,000 | 4,638     |   |20,000,000(20m)| |
+| Compute resource      | 12000 CPU cores, 384 TPUs| Linear     | 4 GPUs,48 CPU cores|  |1 gpu,1 cpu(home computer)|
+|Required replay        |971,000 | 4,638     |608|20,000,000(20m)|0 |
+|Best result(The greatest opponent ever to win)|Serral(One of the best progamer in the world)|Time(IEM2023 Champion)|build-in ai lv-10||build-in ai lv-5| 
 
 Our paper: 
 
