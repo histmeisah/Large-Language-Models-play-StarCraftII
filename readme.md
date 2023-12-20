@@ -14,6 +14,7 @@ method, including single-frame summarization for processing raw observations and
 |Required replay        |971,000 | 4,638     |608|20,000,000(20m)|0 |
 |Best result(The greatest opponent ever to win)|Serral(One of the best progamer in the world)|Time(IEM2023 Champion)|build-in ai lv-10|AlphaStar BC agent|build-in ai lv-5| 
 |Strategy Interpretability|&#x2716;|&#x2716;|&#x2716;|&#x2716;|&#x2714;|
+|Expansibility(adapt to latest game version and other race ) |&#x2716;|&#x2716;|&#x2716;|&#x2716;|&#x2714;|
 
 Our paper: 
 
