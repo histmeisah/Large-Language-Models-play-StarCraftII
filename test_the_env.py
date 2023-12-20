@@ -33,7 +33,7 @@ build in ai 难度
 
 
 def gpt_agent_test(agent, env):
-    wandb.login(key='a51e8268ce285c7e63ccc7a6d685e6ea85c48101')
+    wandb.login(key='your key')
     config = {
         "LLM_model_name": "gpt-3.5-turbo",
         "LLM_temperature": 0,
