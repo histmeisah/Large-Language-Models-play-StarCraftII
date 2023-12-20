@@ -1,4 +1,5 @@
-# LLM Play StarCraft II  Documentation
+# Large Language Models Play StarCraft II: Benchmarks and A Chain of Summarization Approach
+![VYY 5IX JX3 H)`N$_B}@L](https://github.com/histmeisah/Large-Language-Models-play-StarCraftII/assets/49554454/59a941fa-bd71-4145-b99e-3a971aa93790)
 
 ## Install StarCraft II and setup maps
 
