@@ -1,5 +1,10 @@
 # Large Language Models Play StarCraft II: Benchmarks and A Chain of Summarization Approach
 ![VYY 5IX JX3 H)`N$_B}@L](https://github.com/histmeisah/Large-Language-Models-play-StarCraftII/assets/49554454/59a941fa-bd71-4145-b99e-3a971aa93790)
+StarCraft II is a challenging benchmark for AI agents due to  micro-level operations and macro-awareness. Previous works,  such as Alphastar and SCC, achieve impressive performance on tackling StarCraft
+II , however, still exhibit deficiencies in long-term strategic planning and strategy interpretability. Emerging large language model (LLM) agents, presents the immense potential in solving intricate tasks. 
+
+Motivated by this, we aim to validate the capabilities of LLMs on StarCraft II.  We first develop textual StratCraft II environment, called TextStarCraft II. Secondly, we propose a Chain of Summarization
+method, including single-frame summarization for processing raw observations and multi-frame summarization for analyzing game information, providing command recommendations, and generating strategic decisions. Our experiment demonstrates that LLM agents are capable of defeating the built-in AI at the Harder(Lv5) difficulty level. 
 
 ## Install StarCraft II and setup maps
 
