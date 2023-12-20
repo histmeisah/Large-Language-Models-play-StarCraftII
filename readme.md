@@ -6,6 +6,13 @@ II , however, still exhibit deficiencies in long-term strategic planning and str
 Motivated by this, we aim to validate the capabilities of LLMs on StarCraft II.  We first develop textual StratCraft II environment, called TextStarCraft II. Secondly, we propose a Chain of Summarization
 method, including single-frame summarization for processing raw observations and multi-frame summarization for analyzing game information, providing command recommendations, and generating strategic decisions. Our experiment demonstrates that LLM agents are capable of defeating the built-in AI at the Harder(Lv5) difficulty level. 
 
+Our paper: 
+
+Large Language Models Play StarCraft II: Benchmarks and A Chain of Summarization Approach 
+[https://arxiv.org/abs/2312.11865](https://arxiv.org/abs/2312.11865)
+
+
+
 ## Install StarCraft II and setup maps
 
 ### Install StarCraft II
