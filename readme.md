@@ -96,8 +96,20 @@ To save time, you can run multiple demos simultaneously using `multiprocess_test
 
 Other parameters are the same as in the Single Process setup.
 
+### Other settings
+In our experiments, we have added some more settings, but due to several reasons these settings will coming soon.
+
+- `num_agents` : This environment will support `LLM agent` vs `LLM agent` or `RL agent`.
+- `env_type`: This environment will support Text or MultiModal
+- 'player_race': This environment will support Zerg and Terran
+- `opposite_type`: This env will support some human designed botai.
 
 
+
+## Create your LLM Agent
+
+### LLM agent construction
+- `LLM` 
 
 
 
