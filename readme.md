@@ -108,10 +108,21 @@ In our experiments, we have added some more settings, but due to several reasons
 
 ## Create your LLM Agent
 If you want to use other llm to create your own llm agent, the following things you should to know.
-TODO
 
+### Component of LLM Agent
+- `LLM`: In our repo, you should request llm from `ChatBot_SingleTurn` function in `TextStarCraft2_2/LLM/gpt_test` 
+- 'L1_summarize': Our level-1 summarization method is here: `generate_summarize_L1` in `TextStarCraft2_2/summarize/L1_summarize.py` 
+- `L2_summarize`: Our level-2 summarization method is here : `L2_summary` in `TextStarCraft2_2/summarize/gpt_test/L2_summarize.py`
+- `action dict`: The actions that llm agent can use. Here we can set `TextStarCraft2_2/utils/action_info.py` . You can add more actions for llm agent. 
+- `action extractor` : We can extract decisions by `TextStarCraft2_2/utils/action_extractor.py`
 
+### Env
+The core of our TextStarCraft II env is `TextStarCraft2_2/env/bot`. Here you can add more settings for environment. So if you want to realise Terran and Zerg bot, you can modify our code about this dictionary.
 
+- `State`: In `Protoss_bot.py`, the State of Env is generate from `get_information` function. This is what we said `Obs to Text adaptor`
+- `Action`: In `Protoss_bot.py`, the Action space of Agent is designed by these `handle_action` function. This is what we said `Text to Action adaptor`.
+
+ 
 
 
 
