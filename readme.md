@@ -107,9 +107,8 @@ In our experiments, we have added some more settings, but due to several reasons
 
 
 ## Create your LLM Agent
-
-### LLM agent construction
-- `LLM` 
+If you want to use other llm to create your own llm agent, the following things you should to know.
+TODO
 
 
 
