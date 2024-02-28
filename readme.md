@@ -55,7 +55,7 @@ Or you can download maps in here:
 ## Setup environment
 
 ### Create environment
-- OS, We used Windows 11 to develop this demo, because BLZ didnt release the latest sc2 on liunx.  
+- OS, We used Windows 11 to develop this demo, because BLZ didnt release the latest sc2 on liunx, so please run our repo on Windows OS!  
 - `python`: python 3.10.
 - `cuda`: cuda 12.1.
 - `torch`: 2.1.0
