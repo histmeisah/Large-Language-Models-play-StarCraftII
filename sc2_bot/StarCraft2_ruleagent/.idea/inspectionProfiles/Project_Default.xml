@@ -1,0 +1,50 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyInterpreterInspection" enabled="true" level="INFORMATION" enabled_by_default="true" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="21">
+            <item index="0" class="java.lang.String" itemvalue="pyworld" />
+            <item index="1" class="java.lang.String" itemvalue="tensorboardpip" />
+            <item index="2" class="java.lang.String" itemvalue="scipy" />
+            <item index="3" class="java.lang.String" itemvalue="onnxsim" />
+            <item index="4" class="java.lang.String" itemvalue="gradio" />
+            <item index="5" class="java.lang.String" itemvalue="fairseq" />
+            <item index="6" class="java.lang.String" itemvalue="SoundFile" />
+            <item index="7" class="java.lang.String" itemvalue="torch" />
+            <item index="8" class="java.lang.String" itemvalue="numpy" />
+            <item index="9" class="java.lang.String" itemvalue="tqdm" />
+            <item index="10" class="java.lang.String" itemvalue="praat-parselmouth" />
+            <item index="11" class="java.lang.String" itemvalue="scikit-maad" />
+            <item index="12" class="java.lang.String" itemvalue="librosa" />
+            <item index="13" class="java.lang.String" itemvalue="Flask_Cors" />
+            <item index="14" class="java.lang.String" itemvalue="onnxoptimizer" />
+            <item index="15" class="java.lang.String" itemvalue="torchaudio" />
+            <item index="16" class="java.lang.String" itemvalue="onnx" />
+            <item index="17" class="java.lang.String" itemvalue="Flask" />
+            <item index="18" class="java.lang.String" itemvalue="openai" />
+            <item index="19" class="java.lang.String" itemvalue="win32gui" />
+            <item index="20" class="java.lang.String" itemvalue="bitsandbytes" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8Inspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="E501" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="bool.type" />
+          <option value="typing.Coroutine.*" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

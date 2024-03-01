@@ -1,0 +1,30 @@
+Task exception was never retrieved
+future: <Task finished name='Task-1' coro=<_host_game() done, defined at D:\anaconda3\envs\sc2env\lib\site-packages\sc2\main.py:340> exception=SystemExit()>
+Traceback (most recent call last):
+  File "D:\anaconda3\envs\sc2env\lib\multiprocessing\process.py", line 315, in _bootstrap
+    self.run()
+  File "D:\anaconda3\envs\sc2env\lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "D:\python_code\TextStarCraft2\sc2_bot\StarCraft2_ruleagent\protoss_agent\test_for_finetune.py", line 1652, in protoss_agent_vs_build_in
+    result = run_game(maps.get(map),
+  File "D:\anaconda3\envs\sc2env\lib\site-packages\sc2\main.py", line 496, in run_game
+    result: Result = asyncio.run(_host_game(map_settings, players, **kwargs))
+  File "D:\anaconda3\envs\sc2env\lib\site-packages\nest_asyncio.py", line 31, in run
+    return loop.run_until_complete(task)
+  File "D:\anaconda3\envs\sc2env\lib\site-packages\nest_asyncio.py", line 93, in run_until_complete
+    self._run_once()
+  File "D:\anaconda3\envs\sc2env\lib\site-packages\nest_asyncio.py", line 129, in _run_once
+    handle._run()
+  File "D:\anaconda3\envs\sc2env\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "D:\anaconda3\envs\sc2env\lib\site-packages\nest_asyncio.py", line 205, in step
+    step_orig(task, exc)
+  File "D:\anaconda3\envs\sc2env\lib\asyncio\tasks.py", line 232, in __step
+    result = coro.send(None)
+  File "D:\anaconda3\envs\sc2env\lib\site-packages\sc2\main.py", line 357, in _host_game
+    async with SC2Process(
+  File "D:\anaconda3\envs\sc2env\lib\site-packages\sc2\sc2process.py", line 108, in __aenter__
+    self._ws = await self._connect()
+  File "D:\anaconda3\envs\sc2env\lib\site-packages\sc2\sc2process.py", line 210, in _connect
+    sys.exit()
+SystemExit
