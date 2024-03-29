@@ -1,35 +1,4 @@
-# Large Language Models Play StarCraft II: Benchmarks and A Chain of Summarization Approach
-![VYY 5IX JX3 H)`N$_B}@L](https://github.com/histmeisah/Large-Language-Models-play-StarCraftII/assets/49554454/59a941fa-bd71-4145-b99e-3a971aa93790)
-StarCraft II is a challenging benchmark for AI agents due to  micro-level operations and macro-awareness. Previous works,  such as Alphastar and SCC, achieve impressive performance on tackling StarCraft
-II , however, still exhibit deficiencies in long-term strategic planning and strategy interpretability. Emerging large language model (LLM) agents, presents the immense potential in solving intricate tasks. 
 
-Motivated by this, we aim to validate the capabilities of LLMs on StarCraft II.  We first develop textual StratCraft II environment, called TextStarCraft II. Secondly, we propose a Chain of Summarization
-method, including single-frame summarization for processing raw observations and multi-frame summarization for analyzing game information, providing command recommendations, and generating strategic decisions. Our experiment demonstrates that LLM agents are capable of defeating the built-in AI at the Harder(Lv5) difficulty level. 
-
-
-|  Work        |         AlphaStar     | SCC          | HierNet-SC2         |AlphaStar Unplugged |  ROA-Star|Ours |
-|-----------------------|--------------|-----------------|---------------------|---------------|-------------|--------------|
-|Method                 |SL+RL+self-play  | SL+RL+self-play  | data-mining + RL|offline RL |  SL+RL+self-play   |prompt + Rule base script|     
-| Compute resource      | 12000 CPU cores, 384 TPUs| Linear     | 4 GPUs,48 CPU cores|not clear|2x 64 v100 |1 gpu,1 cpu(home computer)|
-|Required replay        |971,000 | 4,638     |608|20,000,000(20m)| 120938 |0 |
-|Best result(The greatest opponent ever to win)|Serral(One of the best progamer in the world)|Time(IEM2023 Champion)|build-in ai lv-10|AlphaStar BC agent|hero(GSL Champion)|build-in ai lv-5| 
-|Strategy Interpretability|&#x2716;|&#x2716;|&#x2716;|&#x2716;|&#x2716;|&#x2714;|
-|Expansibility(adapt to latest game version and other race ) |&#x2716;|&#x2716;|&#x2716;|&#x2716;|&#x2716;|&#x2714;|
-
-Our paper: 
-
-Large Language Models Play StarCraft II: Benchmarks and A Chain of Summarization Approach 
-[https://arxiv.org/abs/2312.11865](https://arxiv.org/abs/2312.11865)
-
-Our website:
-
-[Large Language Models Play StarCraft II: Benchmarks and A Chain of Summarization Approach 
-](https://sites.google.com/view/textstarcraft2/%E9%A6%96%E9%A1%B5)
-
-Our demo video:
-
-[Large Language Models Play StarCraft II: Benchmarks and A Chain of Summarization Approach 
-](https://www.youtube.com/watch?v=Iz6Hd917eME&list=PL2vvP3CXffZxrjxSjVAL7QXNFqNq96mcy)
 
 ### Performance of LLMs in TextStarCraft II
 
