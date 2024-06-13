@@ -160,7 +160,7 @@ if __name__ == '__main__':
 
     parser.add_argument('--LLM_api_key', type=str, default="Your-api-key")
     parser.add_argument('--LLM_api_base', type=str, default="Your-api-base")
-    parser.add_argument('--real_time', type=bool, default=True, help='True or False')
+    parser.add_argument('--real_time', type=bool, default=False, help='True or False')
     args = parser.parse_args()
     if args.real_time == True:
         real_time_test(args)
