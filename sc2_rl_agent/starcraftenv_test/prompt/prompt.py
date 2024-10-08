@@ -723,6 +723,10 @@ Decisions:
 
 
 class StarCraftIIPrompt_realtime:
+    """
+
+    This prompt is prepared for the finetuned LLM(which trained by decisions output from gpt, so the output context is just the decision section).
+    """
     def __init__(self, race, K, action_dict):
         self.race = race.lower()
         self.race_specific_prompt = {
@@ -784,30 +788,6 @@ Decisions:
             self.example_input_prompt = r"""chunk0:At 04:08 game time, our current StarCraft II situation is as follows:\n\nResources:\n- game_time: 04:08\n- worker_supply: 23\n- mineral: 55\n- gas: 318\n- supply_left: 11\n- supply_cap: 44\n- supply_used: 33\n- army_supply: 4\n- base_count: 4\n\nBuildings:\n- base_count: 4\n- roach_warren_count: 1\n- gas_buildings_count: 6\n- overlord_count: 4\n- drone_count: 23\n- roach_count: 1\n- planning_base_count: 2\n- planning_drone_count: 3\n- planning_roach_count: 1\n\nUnits:\n- base_count: 4\n- roach_warren_count: 1\n- gas_buildings_count: 6\n- overlord_count: 4\n- drone_count: 23\n- roach_count: 1\n- planning_base_count: 2\n- planning_drone_count: 3\n- planning_roach_count: 1\n\nIn-process:\n- planning_base_count: 2\n- planning_drone_count: 3\n- planning_roach_count: 1\n\nEnemy Information:\n- No known enemy units\n\n", "At 04:08 game time, our current StarCraft II situation is as follows:\n\nResources:\n- game_time: 04:08\n- worker_supply: 23\n- mineral: 55\n- gas: 318\n- supply_left: 11\n- supply_cap: 44\n- supply_used: 33\n- army_supply: 4\n- base_count: 4\n\nBuildings:\n- base_count: 4\n- roach_warren_count: 1\n- gas_buildings_count: 6\n- overlord_count: 4\n- drone_count: 23\n- roach_count: 1\n- planning_base_count: 2\n- planning_drone_count: 3\n- planning_roach_count: 1\n\nUnits:\n- base_count: 4\n- roach_warren_count: 1\n- gas_buildings_count: 6\n- overlord_count: 4\n- drone_count: 23\n- roach_count: 1\n- planning_base_count: 2\n- planning_drone_count: 3\n- planning_roach_count: 1\n\nIn-process:\n- planning_base_count: 2\n- planning_drone_count: 3\n- planning_roach_count: 1\n\nEnemy Information:\n- No known enemy units\n\n, \nchunk{K_1}"""
 
             self.example_output_prompt = r"""
-1. Game Overview: At 04:08 game time, our situation appears to be in an early mid-game stage. We have 23 drones, 55 minerals, and 318 gas. Our supply cap is at 44 with 11 supply left, and our army supply is 4. We have established four bases and have plans for two more.
-
-2. Current Game Stage: Given the game time, drone count, and resource availability, we are transitioning from the early to mid-game stage.
-
-3. Our Situation:
-    3.1 Units and Buildings: We have four bases, a Roach Warren, and six gas buildings (presumably Extractors). Our army currently consists of one Roach. We are planning to expand with two more bases, three additional Drones, and another Roach.
-    3.2 Economy: Our mineral reserves are quite low while gas is abundant. Our worker supply is at a decent number for this stage.
-    3.3 Technology: The presence of a Roach Warren suggests that we have some technological development ongoing, but it's currently limited to Roach production.
-
-4. Our Strategy: It seems we are following a balanced strategy, focusing on both economy expansion and some level of military readiness with Roach production. However, the low mineral count might hinder our planned expansions and military buildup.
-
-5. Enemy's Strategy: There are no known enemy units at this time, making it challenging to infer the enemy's strategy.
-
-6. Key Information: Our current situation emphasizes expansion and tech development with limited military power (Roaches). The low mineral count is a significant concern that might delay our planned expansions and army build-up. Efficient resource management and increasing mineral income are essential for our strategy to work.
-
-Suggestions:
-
-1. Our Strategy: Maintain the balanced strategy but place a high priority on increasing mineral income to sustain expansion and military development.
-2. Units and Buildings: Continue drone production to enhance our resource collection rate, especially for minerals. Build up a more significant Roach army for defense and potential aggression.
-3. Economy: Efficient mineral gathering should be the top priority. If necessary, pull some drones off gas to focus on mineral collection.
-4. Technology: Considering the enemy's unknown status, it may be wise to start investing in versatile unit types and their corresponding technology, such as Hydralisks, to prepare for different enemy strategies.
-5. Larvae: Monitor the number of available larvae. If it's too low, queue the INJECTLARVA ability to increase the larva production.
-
-
 Decisions:
 4: <TRAIN QUEUE>
 0: <RESEARCH ZERGLINGMOVEMENTSPEED>
