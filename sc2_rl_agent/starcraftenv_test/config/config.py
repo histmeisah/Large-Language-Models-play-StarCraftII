@@ -142,7 +142,7 @@ def map_ai_build(build_string):
         'macro': AIBuild.Macro,
         'air': AIBuild.Air
     }
-    return build_map.get(build_string, AIBuild.RandomBuild)  # 如果没有找到对应的难度，返回默认值 Difficulty.Medium
+    return build_map.get(build_string, AIBuild.RandomBuild)  # 如果没有找到对应的战术风格，返回默认值 Difficulty.RandomBuild
 def map_rule_bot(bot_string):
     bot_string = bot_string.lower()
     bot_map = {
