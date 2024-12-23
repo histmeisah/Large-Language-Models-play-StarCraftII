@@ -120,6 +120,16 @@ You can run `test_the_env.py` to try our agent. Here is some parameters you need
 
 Note: Using LLM to play StarCraft2 can take approximately 7 hours for a single game.
 
+Build order type:
+AI_BUILD_LEVELS = [
+    'randombuild',
+    'rush',
+    'timing',
+    'power',
+    'macro',
+    'air'
+]
+
 ### Multi process
 To save time, you can run multiple demos simultaneously using `multiprocess_test.py`. Configure the following parameter:
 - `num_processes`: The number of processes to spawn.
